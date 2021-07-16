@@ -2,7 +2,7 @@
   "name": "csv-line-parser",
   "version": "0.1.0",
   "description": "Read csv by predifened columns",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
