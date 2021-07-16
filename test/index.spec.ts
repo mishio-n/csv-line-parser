@@ -1,4 +1,4 @@
-import { asyncReader } from "../src";
+import { asyncReader } from "..";
 
 const StarterPokemonColumn = {
   fire: 0,

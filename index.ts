@@ -3,9 +3,10 @@ import readline from "readline";
 
 type LineObject<T> = Record<keyof T, string>;
 
-export const asyncReader = async function* <
-  T extends { [key: string]: number }
->(path: string, columns: T): AsyncGenerator<LineObject<T>> {
+const asyncReader = async function* <T extends { [key: string]: number }>(
+  path: string,
+  columns: T
+): AsyncGenerator<LineObject<T>> {
   const rl = readline.createInterface({
     input: fs.createReadStream(path),
     crlfDelay: Infinity,
@@ -20,3 +21,5 @@ export const asyncReader = async function* <
     yield lineObject;
   }
 };
+
+export { asyncReader };
