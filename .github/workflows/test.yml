@@ -2,9 +2,8 @@ name: csv-line-parser CI
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    paths:
+      - 'src/**'
 
 jobs:
   build:

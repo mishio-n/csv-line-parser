@@ -1,2 +1,5 @@
 # csv-line-parser
-必要な列を定義してCSVファイルを読み取る
+
+Read csv by predifened columns.  
+
+![CI status](https://github.com/mishio-n/csv-line-parser/actions/workflows/test/badge.svg)
