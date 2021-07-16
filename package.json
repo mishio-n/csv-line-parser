@@ -4,6 +4,8 @@
   "description": "必要な列を定義してCSVファイルを読み取る",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
     "test": "jest"
   },
   "repository": {
